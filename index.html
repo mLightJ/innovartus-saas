@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovartus Technologies</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #F5F3FF; }
+    nav { background: #4C1D95; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav h1 { color: #F59E0B; font-size: 22px; }
+    nav span { color: #C4B5FD; font-size: 13px; border: 1px solid #7C3AED; padding: 5px 12px; border-radius: 20px; }
+    .hero { background: #6D28D9; color: white; padding: 60px 40px; }
+    .hero h2 { font-size: 36px; margin-bottom: 16px; }
+    .hero h2 em { color: #F59E0B; font-style: normal; }
+    .hero p { color: rgba(255,255,255,0.7); font-size: 16px; max-width: 600px; line-height: 1.7; }
+    .status { background: #7C3AED; padding: 12px 40px; display: flex; gap: 32px; flex-wrap: wrap; }
+    .status span { color: white; font-size: 13px; }
+    .status span::before { content: "● "; color: #4ADE80; }
+    main { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .card { background: white; border-radius: 12px; padding: 24px; border: 1px solid #E5E7EB; text-align: center; }
+    .card h3 { font-size: 30px; color: #4C1D95; margin-bottom: 8px; }
+    .card p { color: #6B7280; font-size: 13px; }
+    .info { background: white; border-radius: 12px; padding: 32px; border: 1px solid #E5E7EB; margin-bottom: 40px; }
+    .info h3 { color: #4C1D95; margin-bottom: 20px; font-size: 20px; }
+    table { width: 100%; border-collapse: collapse; }
+    td { padding: 12px; border-bottom: 1px solid #F5F3FF; font-size: 14px; color: #374151; }
+    td:first-child { font-weight: bold; color: #4C1D95; width: 40%; }
+    .cicd { background: #4C1D95; border-radius: 12px; padding: 32px; color: white; }
+    .cicd h3 { margin-bottom: 20px; font-size: 20px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+    .step { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; padding: 20px; text-align: center; }
+    .step h4 { font-size: 14px; margin-bottom: 8px; color: #F59E0B; }
+    .step p { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+    footer { background: #4C1D95; color: rgba(255,255,255,0.5); text-align: center; padding: 24px; margin-top: 40px; font-size: 13px; }
+    footer strong { color: rgba(255,255,255,0.8); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Innovartus</h1>
+    <span>SaaS Cloud Platform</span>
+  </nav>
+
+  <div class="hero">
+    <h2>Innovartus <em>Technologies</em></h2>
+    <p>A cloud-native SaaS platform deployed using a CI/CD pipeline on Vercel and GitHub. Built for the Cloud Computing course — Case Study 3: SaaS and DevOps.</p>
+  </div>
+
+  <div class="status">
+    <span>Platform Online</span>
+    <span>CI/CD Active</span>
+    <span>Auto-Scaling Enabled</span>
+    <span>SLA: 99.9%</span>
+  </div>
+
+  <main>
+    <div class="cards">
+      <div class="card"><h3>99.9%</h3><p>Uptime SLA</p></div>
+      <div class="card"><h3>&lt;60s</h3><p>CI/CD Deploy Time</p></div>
+      <div class="card"><h3>Auto</h3><p>Scaling — No Manual Config</p></div>
+      <div class="card"><h3>$0</h3><p>Upfront Infrastructure Cost</p></div>
+    </div>
+
+    <div class="info">
+      <h3>Deployment Configuration</h3>
+      <table>
+        <tr><td>Platform</td><td>Vercel (PaaS)</td></tr>
+        <tr><td>Service Model</td><td>PaaS — Platform as a Service</td></tr>
+        <tr><td>Deployment Model</td><td>Public Cloud</td></tr>
+        <tr><td>Version Control</td><td>GitHub</td></tr>
+        <tr><td>CI/CD Trigger</td><td>Automatic on every Git push</td></tr>
+        <tr><td>Security</td><td>HTTPS / TLS enforced automatically</td></tr>
+        <tr><td>Scaling</td><td>Automatic — no configuration needed</td></tr>
+        <tr><td>Status</td><td style="color:#16A34A;font-weight:bold">● Online</td></tr>
+      </table>
+    </div>
+
+    <div class="cicd">
+      <h3>How the CI/CD Pipeline Works</h3>
+      <div class="steps">
+        <div class="step"><h4>1. Code Written</h4><p>Developer writes new feature or bug fix locally</p></div>
+        <div class="step"><h4>2. Push to GitHub</h4><p>Code committed and pushed to the main branch</p></div>
+        <div class="step"><h4>3. Auto Build</h4><p>Vercel detects the push and automatically builds</p></div>
+        <div class="step"><h4>4. Deploy Live</h4><p>New version goes live in under 60 seconds</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>Innovartus Technologies</strong> — Cloud Computing Course Project | Case Study 3: SaaS & DevOps
+  </footer>
+
+</body>
+</html>
